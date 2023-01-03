@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5372947422:AAEcCiZZjXE-K7UfFebv56OANGoAjmoHZxY")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5902501931:AAFPO5v3uW2d37umbsdAA0MeHroHU3EMiz0")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "14557103"))
@@ -49,7 +49,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "0")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "{file_name}")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
